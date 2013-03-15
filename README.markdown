@@ -1,4 +1,4 @@
-# Pretty Formatter fro Rails
+# Pretty Formatter for Rails
 
 This is a Rails logger formatter that improves log format, with colors and
 additional information.
@@ -36,8 +36,7 @@ looks like:
 
     INFO Started GET "/backend/sign_in" for 127.0.0.1 at 2013-03-15 12:06:09 -0600
     INFO Processing by Backend::SessionController#new as HTML
-    DEBUG   Admin Load (0.5ms)  SELECT "admins".* FROM "admins" WHERE "admins"."id"
-    IS NULL LIMIT 1
+    DEBUG   Admin Load (0.5ms)  SELECT "admins".* FROM "admins" WHERE "admins"."id" IS NULL LIMIT 1
     INFO   Rendered backend/session/new.html.erb within layouts/application (61.0ms)
     INFO Completed 200 OK in 133ms (Views: 100.6ms | ActiveRecord: 2.3ms)
 
@@ -61,7 +60,7 @@ capabilities, I did try ay first to fix better_logging to work doing the same
 monkey patching on Rails 4, but at some point it didn't feel right.
 
 The better way is to just create a new **Formatter** and tell Rails to use that
-formatter instead the **SimpleFormatter* which comes by default, so no more
+formatter instead the **SimpleFormatter** which comes by default, so no more
 monkey patching.
 
 ## Install
