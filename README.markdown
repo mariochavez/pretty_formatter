@@ -54,7 +54,7 @@ The host name is truncated to 8 chars - this is by default but configurable
 
 ## Why?
 Why creating another Rails logger gem? I have used better_logging gem in the
-past, and it just worked fine. But it's not working anyone with Rails 4 beta1,
+past, and it just worked fine. But it's not working any more with Rails 4 beta1,
 due to a class that better_logging **monkey patch** to add the formatting
 capabilities, I did try ay first to fix better_logging to work doing the same
 monkey patching on Rails 4, but at some point it didn't feel right.
