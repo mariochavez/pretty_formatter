@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Mario A. Chavez"]
   s.email       = ["mario.chavez@gmail.com"]
   s.homepage    = "http://mario-chavez.decisionesinteligentes.com"
-  s.summary     = "Log formatter for Rails, that format just like BetterLogging gem."
+  s.summary     = "Log formatter for Rails, format just like BetterLogging gem."
   s.description = "A Rails log formatter that improves the log format, using colors and adding additional information to the log."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
