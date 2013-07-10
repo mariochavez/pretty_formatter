@@ -101,7 +101,21 @@ If verbose mode is enable this custom string will appear at the begining of
 each log line.
 
 ## Requirements
-Rails 3.2+, this means that also works with Rails 4 beta1.
+Rails 3.2+, this means that also works with Rails 4.
+
+For Rails 3.2 you will need an additional configuration steps.
+
+Create a logging.rb initializer and add the following code:
+
+  class ActiveSupport::BufferedLogger
+    def formatter=(formatter)
+      @log.formatter = formatter
+    end
+  end
+
+  Rails.logger.formatter = PrettyFormatter.formatter
+
+In there, you can change PrettyFormatter options.
 
 ##License
 This is distributed under a Creative Commons “Attribution-Share Alike” license.
