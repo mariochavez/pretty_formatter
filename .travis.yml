@@ -3,6 +3,3 @@ rvm:
   - 2.0.0
 
 bundler_args: --without development
-
-before_script:
-  - psql -c 'create database pretty_formatter_test;' -U postgres
