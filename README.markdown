@@ -107,13 +107,13 @@ For Rails 3.2 you will need an additional configuration steps.
 
 Create a logging.rb initializer and add the following code:
 
-  class ActiveSupport::BufferedLogger
-    def formatter=(formatter)
-      @log.formatter = formatter
+    class ActiveSupport::BufferedLogger
+      def formatter=(formatter)
+        @log.formatter = formatter
+      end
     end
-  end
 
-  Rails.logger.formatter = PrettyFormatter.formatter
+    Rails.logger.formatter = PrettyFormatter.formatter
 
 In there, you can change PrettyFormatter options.
 
