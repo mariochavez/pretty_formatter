@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mariochavez/pretty_formatter.png?branch=master)](https://travis-ci.org/mariochavez/pretty_formatter)
+
 # Pretty Formatter for Rails
 
 This is a Rails logger formatter that improves log format, with colors and
